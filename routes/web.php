@@ -22,4 +22,4 @@ Route::get('/g', function() {
 });
 
 //OK
-// Edit from browser laptop
+// Edit from browser laptop 22
