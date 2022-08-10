@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/g', function() {
     return view("greeting");
 });
+
+//OK
