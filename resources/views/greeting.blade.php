@@ -9,5 +9,6 @@
 <body>
     Hello Sundori
     <h1>Ok</h1>
+    <h2>{{ $name }}</h2>
 </body>
 </html>

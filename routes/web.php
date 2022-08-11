@@ -21,5 +21,9 @@ Route::get('/g', function() {
     return view("greeting");
 });
 
-//OK
-// Edit from browser laptop 22
+Route::get('/var/{name}/{id}', function($name, $id) {
+    echo "good";
+});
+Route::get('/test/{name}/{id?}', function($name, $id=44) {  // Variable is passing in URL must {}
+    echo "Good " . $name. $id;
+});
