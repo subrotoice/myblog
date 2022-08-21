@@ -17,13 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/g', function() {
-    return view("greeting");
-});
+Route::get('/greeting', function() {
+    return "Greeting Name roure";
+})->name('gr');
 
-Route::get('/var/{name}/{id}', function($name, $id) {
-    echo "good";
-});
-Route::get('/test/{name}/{id?}', function($name, $id=44) {  // Variable is passing in URL must {}
+
+Route::get('/test/{name}/{id?}', function($name, $id= null) {  // Variable is passing in URL must {}
     echo "Good " . $name. $id;
 });
